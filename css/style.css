@@ -1009,16 +1009,12 @@ font-size: 18px;
     display: block;
 }
 .inner-footer{
-    width: 95%;
-    margin: auto;
-    padding: 30px 10PX;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    padding-top: 50px;
 }
 .footer-items{
-    width: 25%;
-    padding: 10px 20px;
+    padding: 20px;
 }
 .footer-items h1{
     padding: 10px 0;
@@ -1063,23 +1059,12 @@ font-size: 18px;
     margin: 10px 0;
     height: 25px;
 }
-.footer-items li i{
-    margin-right: 20px;
-}
-.social-media{
-    width: 100%;
-    color: #fff;
-    text-align: center;
-}
-.social-media a{
-    color: #fff;
-    text-decoration: none;
-}
 .social-media i{
     height: 40px;
     width: 40px;
     margin: 20px 5px;
-    padding: 10px;
+    text-align: center;
+    line-height: 40px;
     color: #fff;
     border-radius: 50px;
     border: 1px solid #fff;
@@ -1095,16 +1080,13 @@ font-size: 18px;
     font-size: 12px;
     text-align: center;
 }
-
-@media screen and (max-width: 1085px){
-    .footer-items{
-        width: 50%;
-    }
+.sp5 i{
+    padding-right: 5px;
 }
-
-@media screen and (max-width: 600px){
+@media only screen and (max-width: 330px)
+{
     .footer-items{
-        width: 100%;
+        padding: 9px;
     }
 }
 
